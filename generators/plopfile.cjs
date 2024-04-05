@@ -7,13 +7,13 @@ module.exports = function (plop) {
       {
         type: "input",
         name: "path",
-        message: "component path?",
+        message: "component path?"
       },
       {
         type: "input",
         name: "name",
         message: "component name?"
-      },
+      }
     ],
 
     // actions to perform
@@ -27,6 +27,11 @@ module.exports = function (plop) {
         type: "add",
         path: "../src/{{path}}/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
         templateFile: "templates/component.test.tsx.hbs"
+      },
+      {
+        type: "add",
+        path: "../src/{{path}}/{{pascalCase name}}/{{pascalCase name}}.styles.ts",
+        templateFile: "templates/component.styles.ts.hbs"
       }
     ]
   });
