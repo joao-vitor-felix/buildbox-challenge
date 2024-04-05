@@ -21,4 +21,4 @@ export const THEME = {
       authorName: "#7a7a7a"
     }
   }
-};
+} as const;
