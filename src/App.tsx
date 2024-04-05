@@ -1,5 +1,11 @@
+import { GlobalStyles } from "@/styles/GlobalStyles";
+import { Theme } from "@/styles/Theme";
 const App = () => {
-  return <div>Oi</div>;
+  return (
+    <Theme>
+      <GlobalStyles />;
+    </Theme>
+  );
 };
 
 export default App;
