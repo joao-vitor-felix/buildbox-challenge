@@ -1,12 +1,19 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
+import { UseFormRegisterReturn, UseFormReturn } from "react-hook-form";
 
 import PhotoIcon from "@/assets/photo-icon.svg";
 import TrashIcon from "@/assets/trash-icon.svg";
 
+import { FormValues } from "../Form/Form";
 import * as S from "./PhotoInput.styles";
 
-export const PhotoInput = () => {
-  const [image, setImage] = useState("");
+type PhotoInputProps = {
+  formProps: UseFormRegisterReturn;
+  form: UseFormReturn<FormValues>;
+};
+
+export const PhotoInput = ({ form, formProps }: PhotoInputProps) => {
+  const image = form.watch("image");
 
   const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target?.files?.[0];
@@ -14,7 +21,9 @@ export const PhotoInput = () => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-      setImage(reader.result as string);
+      form.resetField("image", {
+        defaultValue: reader.result as string
+      });
     };
 
     if (file) {
@@ -22,7 +31,11 @@ export const PhotoInput = () => {
     }
   };
 
-  const handleRemoveImage = () => setImage("");
+  const handleRemoveImage = () => {
+    form.resetField("image", {
+      defaultValue: ""
+    });
+  };
 
   return (
     <S.Wrapper>
@@ -35,6 +48,7 @@ export const PhotoInput = () => {
           type="file"
           accept="image/*"
           id="image-file"
+          {...formProps}
           onChange={e => handleImageChange(e)}
         />
         {!image && <S.PhotoIcon src={PhotoIcon} alt="Ícone de imagem" />}

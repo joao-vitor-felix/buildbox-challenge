@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 export const Label = styled.label<WrapperProps>`
   width: 8.8rem;
   min-height: 8.8rem;
+  max-height: 8.8rem;
   border-radius: 3.6rem;
   border: ${({ $image, theme }) =>
     $image ? "none" : `solid 0.1rem ${theme.colors.form.inputFileBorder}`};
