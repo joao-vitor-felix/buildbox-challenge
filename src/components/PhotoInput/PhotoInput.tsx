@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 
-import Logo from "@/assets/photo-icon.svg";
+import PhotoIcon from "@/assets/photo-icon.svg";
+import TrashIcon from "@/assets/trash-icon.svg";
 
 import * as S from "./PhotoInput.styles";
 
@@ -21,20 +22,32 @@ export const PhotoInput = () => {
     }
   };
 
+  const handleRemoveImage = () => setImage("");
+
   return (
-    <S.Wrapper
-      htmlFor="image-file"
-      $image={image}
-      aria-label="Selecione uma imagem"
-    >
-      <S.Input
-        type="file"
-        accept="image/*"
-        id="image-file"
-        onChange={e => handleImageChange(e)}
-      />
-      {!image && <S.Icon src={Logo} alt="Ícone de imagem" />}
-      {image && <S.Photo src={image} alt="Imagem selecionada" />}
+    <S.Wrapper>
+      <S.Label
+        htmlFor="image-file"
+        $image={image}
+        aria-label="Selecione uma imagem"
+      >
+        <S.Input
+          type="file"
+          accept="image/*"
+          id="image-file"
+          onChange={e => handleImageChange(e)}
+        />
+        {!image && <S.PhotoIcon src={PhotoIcon} alt="Ícone de imagem" />}
+
+        {image && <S.Photo src={image} alt="Imagem selecionada" />}
+      </S.Label>
+      {image && (
+        <S.TrashIcon
+          src={TrashIcon}
+          alt="Ícone de lixeira"
+          onClick={handleRemoveImage}
+        />
+      )}
     </S.Wrapper>
   );
 };

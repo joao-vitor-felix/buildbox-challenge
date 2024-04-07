@@ -4,7 +4,15 @@ type WrapperProps = {
   $image: string;
 };
 
-export const Wrapper = styled.label<WrapperProps>`
+//FIXME: Corrigir estilo da lixeira
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+`;
+
+export const Label = styled.label<WrapperProps>`
   width: 8.8rem;
   min-height: 8.8rem;
   border-radius: 3.6rem;
@@ -18,10 +26,11 @@ export const Wrapper = styled.label<WrapperProps>`
 
 export const Input = styled.input``;
 
-export const Icon = styled.img`
-  position: absolute;
+export const PhotoIcon = styled.img`
   width: 2.4rem;
 `;
+
+export const TrashIcon = styled(PhotoIcon)``;
 
 export const Photo = styled.img`
   width: 100%;
