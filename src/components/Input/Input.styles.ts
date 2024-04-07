@@ -14,4 +14,6 @@ export const Input = styled.input`
   }
 `;
 
-export const InputTextArea = styled(Input)``;
+export const InputTextArea = styled(Input)`
+  height: 8rem;
+`;
