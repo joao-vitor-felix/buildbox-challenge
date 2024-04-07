@@ -21,6 +21,9 @@ body {
   background-color: ${({ theme }) => theme.colors.layout.background};
 }
 
+input[type="file"] {
+  display: none;
+}
 #root {
   height: 100%;
 }

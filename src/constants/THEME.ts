@@ -11,6 +11,7 @@ export const THEME = {
       background: "#313131",
       border: "#3b3b3b",
       inputBackground: "#494949",
+      inputFileBorder: "#4b4b4b",
       placeholderText: "#9f9f9f",
       text: "#FFFFFF"
     },
