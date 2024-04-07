@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 184.7 56" style="enable-background:new 0 0 184.7 56;" xml:space="preserve">
+<g id="svg-buildbox">
+	<polygon style="fill:#FFFFFF;" points="0,27.5 10.9,33.1 10.9,20 0,14.5 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.1s;animation2.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation1" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation1.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation2" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="0,43.4 10.9,49 10.9,36 0,30.4 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0s;animation4.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation3" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation3.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation4" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="13.5,50.4 24.4,56 24.4,43 13.5,37.4 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.1s;animation6.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation5" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation5.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation6" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="27,56 37.9,50.4 37.9,37.4 27,43 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.2s;animation8.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation7" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation7.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation8" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="40.6,48.9 51.5,43.4 51.5,30.5 40.6,36.1 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.5s;animation10.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation9" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation9.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation10" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="40.6,20.2 40.6,33.2 51.5,27.7 51.5,14.6 50,15.3 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.6s;animation12.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation11" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation11.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation12" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="25.7,29.8 15.3,35.3 25.7,40.7 36.2,35.3 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.3s;animation14.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation13" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation13.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation14" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="13.5,33 24.4,27.3 24.4,14.5 13.5,20 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.3s;animation16.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation15" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation15.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation16" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="27,27.5 37.9,33.2 37.9,20.2 27,14.6 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.4s;animation18.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation17" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation17.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation18" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="39.2,7 28.8,12.5 39.2,17.8 49.7,12.4 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.6s;animation20.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation19" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation19.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation20" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="32.2,7.5 36.1,5.5 25.7,0 15.4,5.4 25.7,10.8 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.5s;animation22.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation21" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation21.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation22" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<polygon style="fill:#FFFFFF;" points="12.2,6.9 1.7,12.4 12.2,17.7 22.6,12.4 	">
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0.2s;animation24.end+5s" calcMode="linear" dur="0.10s" fill="remove" from="1" id="animation23" keySplines="0.25 0.1 0.25 1" restart="always" to="0.2">
+		</animate>
+	
+		<animate  accumulate="none" additive="replace" attributeName="opacity" begin="animation23.end" calcMode="linear" dur="0.50s" fill="remove" from="0.2" id="animation24" keySplines="0.25 0.1 0.25 1" restart="always" to="1">
+		</animate>
+	</polygon>
+	<g>
+		<path style="fill:#FFFFFF;" d="M74.935,22.593c-2.341,0-4.214,1.088-5.166,2.961h-0.091v-9.078h-3.761v22.807h3.67v-2.809h0.091
+			c0.967,1.903,2.824,2.99,5.241,2.99c4.184,0,6.842-3.262,6.842-8.428C81.762,25.856,79.088,22.593,74.935,22.593z M73.802,36.337
+			c-2.477,0-4.138-2.114-4.138-5.301c0-3.172,1.661-5.317,4.138-5.317c2.477,0,4.108,2.084,4.108,5.317
+			C77.91,34.268,76.295,36.337,73.802,36.337z"/>
+		<path style="fill:#FFFFFF;" d="M95.034,32.244c0,2.447-1.405,4.063-3.701,4.063c-2.22,0-3.383-1.299-3.383-3.7v-9.833h-3.761
+			v10.588c0,3.806,2.251,6.132,5.845,6.132c2.507,0,4.153-1.087,5.06-3.096h0.091v2.885h3.61V22.774h-3.761L95.034,32.244
+			L95.034,32.244z"/>
+		<rect x="102.098" y="22.774" style="fill:#FFFFFF;" width="3.761" height="16.508"/>
+		<path style="fill:#FFFFFF;" d="M103.971,16.536c-1.163,0-2.114,0.891-2.114,2.07c0,1.163,0.951,2.069,2.114,2.069
+			c1.178,0,2.114-0.906,2.114-2.069C106.085,17.427,105.149,16.536,103.971,16.536z"/>
+		<rect x="109.286" y="16.476" style="fill:#FFFFFF;" width="3.761" height="22.807"/>
+		<path style="fill:#FFFFFF;" d="M127.771,25.553h-0.091c-0.891-1.828-2.749-2.961-5.135-2.961c-4.093,0-6.857,3.307-6.857,8.428
+			c0,5.135,2.749,8.443,6.872,8.443c2.417,0,4.319-1.148,5.21-2.99h0.076v2.809h3.685V16.476h-3.761V25.553z M123.663,36.337
+			c-2.492,0-4.123-2.054-4.123-5.301c0-3.232,1.631-5.317,4.123-5.317c2.477,0,4.123,2.13,4.123,5.317
+			C127.786,34.238,126.155,36.337,123.663,36.337z"/>
+		<path style="fill:#FFFFFF;" d="M143.958,22.593c-2.341,0-4.214,1.088-5.166,2.961h-0.091v-9.078h-3.761v22.807h3.67v-2.809h0.091
+			c0.967,1.903,2.825,2.99,5.241,2.99c4.183,0,6.842-3.262,6.842-8.428C150.785,25.856,148.111,22.593,143.958,22.593z
+			 M142.825,36.337c-2.477,0-4.138-2.114-4.138-5.301c0-3.172,1.662-5.317,4.138-5.317c2.477,0,4.108,2.084,4.108,5.317
+			C146.933,34.268,145.318,36.337,142.825,36.337z"/>
+		<path style="fill:#FFFFFF;" d="M160.538,22.548c-4.833,0-7.944,3.263-7.944,8.473c0,5.271,3.082,8.504,7.944,8.504
+			c4.894,0,7.959-3.232,7.959-8.504C168.498,25.795,165.401,22.548,160.538,22.548z M160.538,36.518
+			c-2.568,0-4.123-2.023-4.123-5.482c0-3.444,1.556-5.482,4.123-5.482c2.583,0,4.138,2.023,4.138,5.482
+			S163.136,36.518,160.538,36.518z"/>
+		<polygon style="fill:#FFFFFF;" points="184.7,22.774 180.577,22.774 177.224,28.619 177.148,28.619 173.75,22.774 169.521,22.774 
+			174.838,31.051 169.46,39.283 173.494,39.283 176.952,33.317 177.043,33.317 180.517,39.283 184.64,39.283 179.369,30.945 		"/>
+	</g>
+</g>
+</svg>
