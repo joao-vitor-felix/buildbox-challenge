@@ -1,23 +1,19 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
+
+import { useCardContext } from "@/hooks/useCardContext";
 
 import { Button } from "../Button/Button";
 import { Input } from "../Input/Input";
 import { PhotoInput } from "../PhotoInput/PhotoInput";
 import * as S from "./Form.styles";
-
-const schema = z.object({
-  image: z.string().url({ message: "A Imagem é obrigatória." }),
-  name: z.string().trim().min(1, { message: "O nome é obrigatório." }),
-  message: z.string().trim().min(1, { message: "A mensagem é obrigatório." })
-});
-
-export type FormValues = z.infer<typeof schema>;
+import { formSchema, FormValues } from "./schema";
 
 export const Form = () => {
+  const { cards, setCards } = useCardContext();
+
   const form = useForm<FormValues>({
-    resolver: zodResolver(schema),
+    resolver: zodResolver(formSchema),
     defaultValues: {
       image: "",
       name: "",
@@ -35,7 +31,16 @@ export const Form = () => {
     });
   };
 
-  const onSubmit = () => {};
+  const onSubmit = (data: FormValues) => {
+    const newCard = {
+      id: crypto.randomUUID(),
+      ...data
+    };
+
+    setCards([newCard, ...cards]);
+
+    handleResetForm();
+  };
 
   return (
     <S.Form onSubmit={form.handleSubmit(onSubmit)}>
