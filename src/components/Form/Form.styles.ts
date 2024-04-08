@@ -9,7 +9,6 @@ export const Form = styled.form`
   width: 100%;
   margin-top: 4rem;
   padding: 2.4rem;
-  min-height: 30rem;
   border: solid 1px ${({ theme }) => theme.colors.form.border};
   border-radius: 0.3rem;
 `;
