@@ -39,6 +39,7 @@ export const ResetFormButton = styled.button`
   color: ${({ theme }) => theme.colors.layout.disabled};
   background-color: transparent;
   border: none;
+  cursor: pointer;
 `;
 
 export const ButtonGroup = styled.div`
