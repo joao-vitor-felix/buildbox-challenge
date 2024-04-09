@@ -19,7 +19,6 @@ const fadeOut = keyframes`
 export const Container = styled.div<ContainerProps>`
   display: flex;
   width: 100%;
-  height: 25rem;
   /* opacity: ${({ $isNew }) => ($isNew ? 0 : 1)}; */
   align-items: center;
   border: 1px solid ${({ theme }) => theme.colors.card.border};
@@ -35,14 +34,12 @@ export const Container = styled.div<ContainerProps>`
       opacity: 0;
       /* animation: ${fadeOut} 0.5s ease-in; */
     `}
-`;
 
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  width: 100%;
-  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 50.16rem;
+    min-height: 20.25rem;
+    align-self: center;
+  }
 `;
 
 export const Text = styled.p`
@@ -53,12 +50,29 @@ export const Text = styled.p`
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+  word-break: break-word;
+  text-overflow: ellipsis;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  align-self: baseline;
+  overflow: hidden;
+  hyphens: auto;
 `;
 
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  width: 100%;
 `;
 
 export const SendBy = styled.span`
@@ -91,4 +105,8 @@ export const DeleteIcon = styled.img`
   position: absolute;
   top: 1.2rem;
   right: 0.9rem;
+
+  @media screen and (min-width: 768px) {
+    cursor: pointer;
+  }
 `;
