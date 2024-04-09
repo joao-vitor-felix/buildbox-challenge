@@ -28,13 +28,13 @@ export const Card = ({
     <S.Container $isCardBeingDeleted={isCardBeingDeleted} $isNew={isNew}>
       <S.DeleteIcon src={DeleteIcon} onClick={handleDeleteCard} />
       <S.Photo src={image} />
-      <S.Content>
+      <S.TextWrapper>
         <S.Text>{message}</S.Text>
         <S.PostInfo>
           <S.SendBy>Enviado por</S.SendBy>
           <S.Author>{name}</S.Author>
         </S.PostInfo>
-      </S.Content>
+      </S.TextWrapper>
     </S.Container>
   );
 };
