@@ -5,6 +5,17 @@ type ContainerProps = {
   $isNew: boolean;
 };
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
 const fadeOut = keyframes`
   0% {
     opacity: 1;
@@ -15,11 +26,9 @@ const fadeOut = keyframes`
     visibility: hidden;
   }`;
 
-//FIXME: Consertar animações
 export const Container = styled.div<ContainerProps>`
   display: flex;
   width: 100%;
-  /* opacity: ${({ $isNew }) => ($isNew ? 0 : 1)}; */
   align-items: center;
   border: 1px solid ${({ theme }) => theme.colors.card.border};
   padding: 5.6rem 2.4rem 2.4rem 3.2rem;
@@ -28,11 +37,17 @@ export const Container = styled.div<ContainerProps>`
   overflow: hidden;
   transition: all 0.4s ease;
 
+  ${({ $isNew }) =>
+    $isNew &&
+    css`
+      animation: ${fadeIn} 0.5s ease-in;
+    `}
+
   ${({ $isCardBeingDeleted }) =>
     $isCardBeingDeleted &&
     css`
-      opacity: 0;
-      /* animation: ${fadeOut} 0.5s ease-in; */
+      visibility: hidden;
+      animation: ${fadeOut} 0.5s ease-out;
     `}
 
   @media screen and (min-width: 768px) {
