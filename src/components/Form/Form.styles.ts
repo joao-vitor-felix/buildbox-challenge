@@ -11,6 +11,11 @@ export const Form = styled.form`
   padding: 2.4rem;
   border: solid 1px ${({ theme }) => theme.colors.form.border};
   border-radius: 0.3rem;
+
+  @media screen and (min-width: 768px) {
+    width: 50.16rem;
+    align-self: center;
+  }
 `;
 
 export const InputGroup = styled.div`
