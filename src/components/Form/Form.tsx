@@ -37,9 +37,11 @@ export const Form = () => {
       ...data
     };
 
-    setCards([newCard, ...cards]);
-
     handleResetForm();
+
+    setTimeout(() => {
+      setCards([newCard, ...cards]);
+    }, 1000);
   };
 
   return (
