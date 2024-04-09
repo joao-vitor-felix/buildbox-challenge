@@ -41,14 +41,13 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  width: 100%;
+  overflow: hidden;
 `;
 
 export const Text = styled.p`
   color: ${({ theme }) => theme.colors.card.content};
   font-size: 1.2rem;
-  max-height: 10.2rem;
-  white-space: wrap;
-  text-overflow: ellipsis;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -71,6 +70,9 @@ export const SendBy = styled.span`
 export const Author = styled.span`
   font-size: 1.4rem;
   color: ${({ theme }) => theme.colors.card.authorName};
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export const Photo = styled.img`
