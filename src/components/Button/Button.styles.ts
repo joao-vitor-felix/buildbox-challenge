@@ -8,6 +8,7 @@ export const Button = styled.button`
   padding: 1.2rem 2.4rem;
   border: none;
   border-radius: 0.8rem;
+  cursor: pointer;
 
   &:disabled {
     color: ${({ theme }) => theme.colors.form.background};
