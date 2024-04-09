@@ -19,6 +19,20 @@ body {
   font-family: "Manrope", sans-serif;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.layout.background};
+
+  &::-webkit-scrollbar {
+   width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #ebfaf7;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.colors.primary};
+    border-radius: 100vh;
+    }
 }
 
 input[type="file"] {
