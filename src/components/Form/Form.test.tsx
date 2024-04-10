@@ -117,4 +117,43 @@ describe("Form", () => {
     expect(imageUploaded).not.toBeInTheDocument();
     expect(trashIcon).not.toBeInTheDocument();
   });
+
+  it("should display image error when the input is not field on submitButton click", async () => {
+    const { imageIcon, nameInput, messageInput, submitButton } =
+      await renderComponent();
+
+    await userEvent.type(nameInput, "John Doe");
+    await userEvent.type(messageInput, "John Doe");
+    await userEvent.click(submitButton);
+    expect(imageIcon).toBeInTheDocument();
+    expect(screen.getByText(/a imagem é obrigatória./i)).toBeInTheDocument();
+  });
+
+  it("should display name error when the input is not field on submitButton click", async () => {
+    const { photoInput, nameInput, messageInput, submitButton } =
+      await renderComponent();
+
+    const file = new File(["(⌐□_□)"], "bla.png", { type: "image/png" });
+
+    await userEvent.upload(photoInput, file);
+    await screen.findByAltText(/imagem selecionada/i);
+    await userEvent.type(messageInput, "John Doe");
+    await userEvent.click(submitButton);
+    expect(nameInput).toHaveValue("");
+    expect(screen.getByText(/o nome é obrigatório./i)).toBeInTheDocument();
+  });
+
+  it("should display message error when the input is not field on submitButton click", async () => {
+    const { photoInput, nameInput, messageInput, submitButton } =
+      await renderComponent();
+
+    const file = new File(["(⌐□_□)"], "bla.png", { type: "image/png" });
+
+    await userEvent.upload(photoInput, file);
+    await screen.findByAltText(/imagem selecionada/i);
+    await userEvent.type(nameInput, "John Doe");
+    await userEvent.click(submitButton);
+    expect(messageInput).toHaveValue("");
+    expect(screen.getByText(/a mensagem é obrigatória./i)).toBeInTheDocument();
+  });
 });
