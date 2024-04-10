@@ -4,7 +4,7 @@ import { UseFormRegisterReturn, UseFormReturn } from "react-hook-form";
 import PhotoIcon from "@/assets/photo-icon.svg";
 import TrashIcon from "@/assets/trash-icon.svg";
 
-import { FormValues } from "../Form/Form";
+import { FormValues } from "../Form/schema";
 import * as S from "./PhotoInput.styles";
 
 type PhotoInputProps = {
