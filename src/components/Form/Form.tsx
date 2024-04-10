@@ -21,7 +21,7 @@ export const Form = () => {
     }
   });
 
-  const isFormNotValid = !form.formState.isValid || !form.formState.isDirty;
+  const isFormNotTouched = !form.formState.isDirty;
 
   const handleResetForm = () => {
     form.reset({
@@ -47,26 +47,32 @@ export const Form = () => {
   return (
     <S.Form onSubmit={form.handleSubmit(onSubmit)}>
       <PhotoInput formProps={form.register("image")} form={form} />
-      <S.Error>{form.formState.errors?.image?.message}</S.Error>
+      {form.formState.errors?.image?.message && (
+        <S.Error>{form.formState.errors.image.message}</S.Error>
+      )}
       <S.InputGroup>
         <Input
           placeholder="Digite seu nome"
           formProps={form.register("name")}
         />
-        <S.Error>{form.formState.errors?.name?.message}</S.Error>
+        {form.formState.errors?.name?.message && (
+          <S.Error>{form.formState.errors.name.message}</S.Error>
+        )}
         <Input
           placeholder="Mensagem"
           inputType="TEXTAREA"
           as="textarea"
           formProps={form.register("message")}
         />
-        <S.Error>{form.formState.errors?.message?.message}</S.Error>
+        {form.formState.errors?.message?.message && (
+          <S.Error>{form.formState.errors.message.message}</S.Error>
+        )}
       </S.InputGroup>
       <S.ButtonGroup>
         <S.ResetFormButton type="button" onClick={handleResetForm}>
           Descartar
         </S.ResetFormButton>
-        <Button disabled={isFormNotValid}>Publicar</Button>
+        <Button disabled={isFormNotTouched}>Publicar</Button>
       </S.ButtonGroup>
     </S.Form>
   );
