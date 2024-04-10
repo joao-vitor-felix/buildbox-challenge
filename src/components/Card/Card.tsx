@@ -26,8 +26,12 @@ export const Card = ({
   };
   return (
     <S.Container $isCardBeingDeleted={isCardBeingDeleted} $isNew={isNew}>
-      <S.DeleteIcon src={DeleteIcon} onClick={handleDeleteCard} />
-      <S.Photo src={image} />
+      <S.DeleteIcon
+        src={DeleteIcon}
+        onClick={handleDeleteCard}
+        alt="Remover card"
+      />
+      <S.Photo src={image} alt="Imagem do card" />
       <S.TextWrapper>
         <S.Text>{message}</S.Text>
         <S.PostInfo>
