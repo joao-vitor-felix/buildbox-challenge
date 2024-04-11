@@ -105,10 +105,8 @@ export const Author = styled.span`
 `;
 
 export const Photo = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 3.6rem;
-  width: 8.8rem;
+  min-width: 8.8rem;
+  max-width: 8.8rem;
   min-height: 8.8rem;
   max-height: 8.8rem;
   border-radius: 3.6rem;
